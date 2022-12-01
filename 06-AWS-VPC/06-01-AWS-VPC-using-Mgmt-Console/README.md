@@ -10,7 +10,7 @@
 
 ## Step-02: Create VPC
 - **Name:** my-manual-vpc
-- **IPv4 CIDR Block:** 10.0.0.0/16
+- **IPv4 CIDR Block:** 10.1.0.0/16
 - Rest all defaults
 - Click on **Create VPC**
 
@@ -19,12 +19,12 @@
 - **VPC ID:** my-manual-vpc
 - **Subnet Name::** my-public-subnet-1
 - **Availability zone:** us-east-1a
-- **IPv4 CIDR Block:** 10.0.1.0/24
+- **IPv4 CIDR Block:** 10.1.1.0/24
 
 ### Step-03-02: Private Subnet
 - **Subnet Name::** my-private-subnet-1
 - **Availability zone:** us-east-1a
-- **IPv4 CIDR Block:** 10.0.101.0/24
+- **IPv4 CIDR Block:** 10.1.101.0/24
 - Click on **Create Subnet**
 
 ## Step-04: Create Internet Gateway and Associate it to VPC

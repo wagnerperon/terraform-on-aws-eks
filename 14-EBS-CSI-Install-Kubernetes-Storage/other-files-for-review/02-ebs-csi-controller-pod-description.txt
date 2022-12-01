@@ -12,7 +12,7 @@ Name:                 ebs-csi-controller-56dfd4fccc-7fgbr
 Namespace:            kube-system
 Priority:             2000000000
 Priority Class Name:  system-cluster-critical
-Node:                 ip-10-0-101-61.ec2.internal/10.0.101.61
+Node:                 ip-10-0-101-61.ec2.internal/10.1.101.61
 Start Time:           Wed, 05 Jan 2022 09:38:32 +0530
 Labels:               app=ebs-csi-controller
                       app.kubernetes.io/component=csi-driver
@@ -24,9 +24,9 @@ Labels:               app=ebs-csi-controller
                       pod-template-hash=56dfd4fccc
 Annotations:          kubernetes.io/psp: eks.privileged
 Status:               Running
-IP:                   10.0.101.194
+IP:                   10.1.101.194
 IPs:
-  IP:           10.0.101.194
+  IP:           10.1.101.194
 Controlled By:  ReplicaSet/ebs-csi-controller-56dfd4fccc
 Containers:
   ebs-plugin:

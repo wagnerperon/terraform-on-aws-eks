@@ -31,15 +31,15 @@ module "vpc" {
 
   # VPC Basic Details
   name = "vpc-dev"
-  cidr = "10.0.0.0/16"   
+  cidr = "10.1.0.0/16"   
   azs                 = ["us-east-1a", "us-east-1b"]
-  private_subnets     = ["10.0.1.0/24", "10.0.2.0/24"]
-  public_subnets      = ["10.0.101.0/24", "10.0.102.0/24"]
+  private_subnets     = ["10.1.1.0/24", "10.1.2.0/24"]
+  public_subnets      = ["10.1.101.0/24", "10.1.102.0/24"]
 
   # Database Subnets
   create_database_subnet_group = true
   create_database_subnet_route_table= true
-  database_subnets    = ["10.0.151.0/24", "10.0.152.0/24"]
+  database_subnets    = ["10.1.151.0/24", "10.1.152.0/24"]
 
   #create_database_nat_gateway_route = true
   #create_database_internet_gateway_route = true
@@ -167,14 +167,14 @@ locals {
 variable "vpc_name" {
   description = "VPC Name"
   type = string 
-  default = "myvpc"
+  default = "my-eks-vpc"
 }
 
 # VPC CIDR Block
 variable "vpc_cidr_block" {
   description = "VPC CIDR Block"
   type = string 
-  default = "10.0.0.0/16"
+  default = "10.1.0.0/16"
 }
 
 # VPC Availability Zones
@@ -188,21 +188,21 @@ variable "vpc_availability_zones" {
 variable "vpc_public_subnets" {
   description = "VPC Public Subnets"
   type = list(string)
-  default = ["10.0.101.0/24", "10.0.102.0/24"]
+  default = ["10.1.101.0/24", "10.1.102.0/24"]
 }
 
 # VPC Private Subnets
 variable "vpc_private_subnets" {
   description = "VPC Private Subnets"
   type = list(string)
-  default = ["10.0.1.0/24", "10.0.2.0/24"]
+  default = ["10.1.1.0/24", "10.1.2.0/24"]
 }
 
 # VPC Database Subnets
 variable "vpc_database_subnets" {
   description = "VPC Database Subnets"
   type = list(string)
-  default = ["10.0.151.0/24", "10.0.152.0/24"]
+  default = ["10.1.151.0/24", "10.1.152.0/24"]
 }
 
 # VPC Create Database Subnet Group (True / False)
@@ -332,11 +332,11 @@ business_divsion = "HR"
 ```t
 # VPC Variables
 vpc_name = "myvpc"
-vpc_cidr_block = "10.0.0.0/16"
+vpc_cidr_block = "10.1.0.0/16"
 vpc_availability_zones = ["us-east-1a", "us-east-1b"]
-vpc_public_subnets = ["10.0.101.0/24", "10.0.102.0/24"]
-vpc_private_subnets = ["10.0.1.0/24", "10.0.2.0/24"]
-vpc_database_subnets= ["10.0.151.0/24", "10.0.152.0/24"]
+vpc_public_subnets = ["10.1.101.0/24", "10.1.102.0/24"]
+vpc_private_subnets = ["10.1.1.0/24", "10.1.2.0/24"]
+vpc_database_subnets= ["10.1.151.0/24", "10.1.152.0/24"]
 vpc_create_database_subnet_group = true 
 vpc_create_database_subnet_route_table = true   
 vpc_enable_nat_gateway = true  

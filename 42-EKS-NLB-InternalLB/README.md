@@ -238,12 +238,12 @@ Run "sudo yum update" to apply all updates.
 -bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
 [ec2-user@ip-10-0-101-207 ~]$ sudo su -
 [root@ip-10-0-101-207 ~]# nslookup lbc-network-lb-internal-d34ab3da5f17aea1.elb.us-east-1.amazonaws.com
-Server:		10.0.0.2
-Address:	10.0.0.2#53
+Server:		10.1.0.2
+Address:	10.1.0.2#53
 
 Non-authoritative answer:
 Name:	lbc-network-lb-internal-d34ab3da5f17aea1.elb.us-east-1.amazonaws.com
-Address: 10.0.1.37
+Address: 10.1.1.37
 
 [root@ip-10-0-101-207 ~]# curl lbc-network-lb-internal-d34ab3da5f17aea1.elb.us-east-1.amazonaws.com
 <!DOCTYPE html>
