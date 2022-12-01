@@ -1,0 +1,2 @@
+AMI em us-east-1
+ami-0b0dcb5067f052a63
